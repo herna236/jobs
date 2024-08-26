@@ -1,0 +1,39 @@
+/* Style for the entire navbar */
+nav {
+    background-color: #f8f9fa; /* Background color */
+    padding: 1rem; /* Padding around the navbar */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+  }
+
+  /* Style for the unordered list */
+  nav ul {
+    list-style: none; /* Remove bullets from list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align list items inline */
+  }
+
+  /* Style for each list item */
+  nav li {
+    margin: 0 1rem; /* Space between each link */
+  }
+
+  /* Style for each link */
+  nav a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Link color */
+    font-weight: bold; /* Bold text */
+  }
+
+  /* Add the vertical bar */
+  nav a:not(:last-child)::after {
+    content: '|'; /* Content for the separator */
+    margin-left: 1rem; /* Space between link and separator */
+    color: #6c757d; /* Color of the separator */
+  }
+
+  /* Optional: Add hover effect for links */
+  nav a:hover {
+    color: #0056b3; /* Darker color on hover */
+  }
